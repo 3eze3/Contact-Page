@@ -1,0 +1,16 @@
+.social {
+	width: fit-content;
+	gap: 2rem;
+	// outline: solid red 1px;
+	padding: 0.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	div {
+		width: 2rem;
+		gap: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

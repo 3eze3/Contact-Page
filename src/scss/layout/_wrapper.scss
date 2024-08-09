@@ -1,0 +1,15 @@
+.main {
+	&__wrapper {
+		inset: 3.4px;
+		background-color: #9478ae;
+		border-radius: 0.5rem;
+		padding-inline: 2rem;
+		position: absolute;
+		z-index: 20;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+	}
+}

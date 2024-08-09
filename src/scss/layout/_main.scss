@@ -1,0 +1,46 @@
+.main {
+	border-radius: 0.5rem;
+	overflow: hidden;
+	position: relative;
+	width: 30rem;
+	height: 30rem;
+	background-color: #9478ae;
+	box-shadow: 0.1rem 0.1rem 0.2rem #9478ae7a, -0.1rem -0.1rem 0.2rem #9478ae7a;
+	&__title {
+		margin-top: 0.5rem;
+		letter-spacing: 0.1rem;
+		text-align: center;
+		position: relative;
+		z-index: 30;
+	}
+
+	&::after,
+	&::before {
+		content: " ";
+		position: absolute;
+		display: block;
+		background-image: linear-gradient(0deg, transparent, #bf0eff, #8400ff);
+		width: inherit;
+		height: inherit;
+		top: -50%;
+		left: -50%;
+		transform-origin: bottom right;
+	}
+	&::after {
+		animation: borderNeon 12s linear infinite;
+	}
+
+	&::before {
+		animation: borderNeon 12s -6s linear infinite;
+	}
+}
+
+@keyframes borderNeon {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

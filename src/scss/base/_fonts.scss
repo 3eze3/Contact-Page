@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "hpop rg";
+	src: local("hpop rg"),
+		url("../assets/fonts/hpop_Regular.woff2") format("woff2"),
+		url("../assets/fonts/hpop_Regular.woff") format("woff"),
+		url("../assets/fonts/hpop_Regular.ttf") format("truetype");
+	font-display: spaw;
+}
+
+body {
+	min-height: 100vh;
+	font-family: "hpop rg";
+	font-size: 100%;
+	hyphens: auto;
+	background-image: linear-gradient(
+		to right,
+		rgb(56, 9, 76) 0% 10%,
+		rgb(48, 9, 68) 20% 30%,
+		rgb(38, 9, 58) 45% 55%,
+		rgb(28, 9, 48) 70% 80%,
+		rgb(18, 9, 38) 90% 100%
+	);
+	// Centrar
+
+	display: grid;
+	place-content: center;
+
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+form,
+input,
+button,
+label {
+	hyphens: auto;
+	color: inherit;
+	display: block;
+	background-color: transparent;
+}
