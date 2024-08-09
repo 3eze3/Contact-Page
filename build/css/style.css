@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+iframe {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "hpop rg";
+  src: local("hpop rg"), url("../assets/fonts/hpop_Regular.woff2") format("woff2"), url("../assets/fonts/hpop_Regular.woff") format("woff"), url("../assets/fonts/hpop_Regular.ttf") format("truetype");
+  font-display: spaw;
+}
+body {
+  min-height: 100vh;
+  font-family: "hpop rg";
+  font-size: 100%;
+  hyphens: auto;
+  background-image: linear-gradient(to right, rgb(56, 9, 76) 0% 10%, rgb(48, 9, 68) 20% 30%, rgb(38, 9, 58) 45% 55%, rgb(28, 9, 48) 70% 80%, rgb(18, 9, 38) 90% 100%);
+  display: grid;
+  place-content: center;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+form,
+input,
+button,
+label {
+  hyphens: auto;
+  color: inherit;
+  display: block;
+  background-color: transparent;
+}
+
+.main {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  background-color: #9478ae;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(148, 120, 174, 0.4784313725), -0.1rem -0.1rem 0.2rem rgba(148, 120, 174, 0.4784313725);
+}
+.main__title {
+  margin-top: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  position: relative;
+  z-index: 30;
+}
+.main::after, .main::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-image: linear-gradient(0deg, transparent, #bf0eff, #8400ff);
+  width: inherit;
+  height: inherit;
+  top: -50%;
+  left: -50%;
+  transform-origin: bottom right;
+}
+.main::after {
+  animation: borderNeon 12s linear infinite;
+}
+.main::before {
+  animation: borderNeon 12s -6s linear infinite;
+}
+
+@keyframes borderNeon {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main__wrapper {
+  inset: 3.4px;
+  background-color: #9478ae;
+  border-radius: 0.5rem;
+  padding-inline: 2rem;
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.form {
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(83, 66, 99, 0.0862745098) inset, -0.1rem -0.1rem 0.2rem rgba(255, 255, 255, 0.0470588235) inset;
+  border-radius: 0.35rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 1rem;
+}
+.form__wrapper {
+  color: #979292;
+  position: relative;
+  width: 100%;
+  padding: 0.25rem 0.5rem 0.15rem;
+}
+.form__input {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  padding: 1rem 0.7rem 0.15rem;
+  z-index: 20;
+  font-size: 0.6em;
+}
+.form__input:focus {
+  border: none;
+  outline: none;
+}
+.form__input:focus ~ .form__label {
+  color: rgb(28, 1, 32);
+  transform: translateX(-1.6rem) translateY(-0.9rem) scale(0.6);
+}
+.form__input:focus ~ .form__shadow {
+  height: 25px;
+}
+.form__label {
+  font-size: 0.6em;
+  position: absolute;
+  padding: 1rem 1.15rem 0.5rem;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.2rem;
+  transition: transform 0.2s ease-in;
+}
+.form__shadow {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0;
+  width: 95%;
+  height: 1.5px;
+  background-color: rgb(20, 2, 20);
+  border-radius: 2.5px;
+  transition: height 0.5s ease;
+}
+.form__send {
+  padding: 0.32rem 1.7rem;
+  background-color: rgb(20, 2, 20);
+  border-radius: 0.3rem;
+  transition: background-color 0.5s ease-in-out;
+}
+.form__send:hover {
+  cursor: pointer;
+  background-color: rgba(31, 4, 37, 0.126);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.social {
+  width: fit-content;
+  gap: 2rem;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social div {
+  width: 2rem;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
