@@ -9,7 +9,7 @@
 
 ---
 
-![Vista previa del componente](build/assets/icons_social/)
+![Vista previa del componente](build/assets/icons_social/preview.jpg)
 
 ---
 
