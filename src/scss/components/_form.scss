@@ -22,7 +22,7 @@
 		height: 2rem;
 		padding: 1rem 0.7rem 0.15rem;
 		z-index: 20;
-		font-size: 0.6em;
+		font-size: 1em;
 		&:focus {
 			border: none;
 			outline: none;
@@ -30,7 +30,7 @@
 
 		&:focus ~ .form__label {
 			color: rgb(28, 1, 32);
-			transform: translateX(-1.6rem) translateY(-0.9rem) scale(0.6);
+			transform: translateX(-2.2rem) translateY(-1.16rem) scale(0.6);
 		}
 
 		&:focus ~ .form__shadow {
@@ -39,9 +39,9 @@
 	}
 
 	&__label {
-		font-size: 0.6em;
+		font-size: 1em;
 		position: absolute;
-		padding: 1rem 1.15rem 0.5rem;
+		padding: 0.8rem 1.15rem 0.5rem;
 		top: 0;
 		left: 0;
 		letter-spacing: 0.2rem;
@@ -54,14 +54,14 @@
 		bottom: 0;
 		width: 95%;
 		height: 1.5px;
-		background-color: rgb(20, 2, 20);
+		background-color: rgba(67, 6, 147, 0.605);
 		border-radius: 2.5px;
 		transition: height 0.5s ease;
 	}
 
 	&__send {
 		padding: 0.32rem 1.7rem;
-		background-color: rgb(20, 2, 20);
+		background-color: rgb(86, 13, 122);
 		border-radius: 0.3rem;
 		transition: background-color 0.5s ease-in-out;
 		&:hover {
