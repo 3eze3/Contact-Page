@@ -1,6 +1,6 @@
-# Página de Contacto **Stream** :movie_camera:
+# Página de Contacto en **Stream** :movie_camera:
 
-## Objetivos Personales:bulb:
+## Objetivos Personales :bulb:
 
 - [x] Interactividad.
 - [x] Diseño atractivo.
@@ -30,7 +30,7 @@
 2. **Form**: Componente que refleja la interacción y se enfoca en la accesibilidad **_aria-label_**.
 3. **Section**: Contiene los enlaces, con la disposición de iconos.
 
-## Instalación y Uso:electric_plug:
+## Instalación y Uso :electric_plug:
 
 1. **Clona el repositorio:**
 
